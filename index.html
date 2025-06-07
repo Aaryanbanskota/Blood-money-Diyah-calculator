@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Official Diyah (Blood Money)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="logo">
+    <img src="https://i.postimg.cc/DZfpYts4/blood-money.jpg" alt="Diyah Logo" />
+  </div>
+  <h1>Official Diyah (Blood Money)</h1>
+  <form id="diyah-form">
+    <label for="name">Name *</label>
+    <input type="text" id="name" required placeholder="Your full name" />
+    <label for="education">Education Level *</label>
+    <select id="education" required>
+      <option value="" disabled selected>Select education</option>
+      <option value="highschool">High School Only</option>
+      <option value="bachelor">Bachelor’s Degree</option>
+      <option value="master">Master’s/Engineer</option>
+      <option value="doctor">Doctor/Abroad Job</option>
+    </select>
+    <div id="college-div" class="hidden">
+      <label for="college">College Name *</label>
+      <input type="text" id="college" placeholder="Enter your college name" />
+    </div>
+    <label for="employment">Employment Status *</label>
+    <select id="employment" required>
+      <option value="" disabled selected>Select employment</option>
+      <option value="employed">Employed</option>
+      <option value="unemployed">Unemployed</option>
+    </select>
+    <div id="job-div" class="hidden">
+      <label for="job">What is your job? *</label>
+      <select id="job">
+        <option value="" disabled selected>Select job type</option>
+        <option value="government">Government Job</option>
+        <option value="normal">Normal Job</option>
+      </select>
+    </div>
+    <label for="property">Do you have Property? *</label>
+    <select id="property" required>
+      <option value="" disabled selected>Select property status</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    <div id="house-div" class="hidden">
+      <label for="house">House Type *</label>
+      <select id="house">
+        <option value="" disabled selected>Select house type</option>
+        <option value="myhouse">My House</option>
+        <option value="parenthouse">Parent House</option>
+      </select>
+    </div>
+    <label for="profession">Profession *</label>
+    <select id="profession" required>
+      <option value="" disabled selected>Select profession</option>
+      <option value="doctor">Doctor</option>
+      <option value="teacher">Teacher</option>
+      <option value="engineer">Engineer</option>
+    </select>
+    <label for="sister">Do you have sister? *</label>
+    <select id="sister" required>
+      <option value="" disabled selected>Select yes or no</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+    <button type="submit">Calculate Diyah Money</button>
+  </form>
+  <div id="preview-bar">
+    <div id="preview-content">Fill form to preview...</div>
+    <button id="download-btn">Download PDF</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
